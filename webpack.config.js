@@ -9,6 +9,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'index.js',
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.js', '.ts', '.tsx'],
@@ -38,6 +39,7 @@ module.exports = {
     hot: true,
     port: 3000,
     publicPath: 'http://localhost:3000/',
+    historyApiFallback: true,
   },
   plugins: [
     new CleanWebpackPlugin(),

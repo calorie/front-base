@@ -1,16 +1,10 @@
 import React from 'react'
-import styled from 'styled-components'
+import Routes from './Routes'
 
-function App() {
+const App: React.FC = () => {
   return (
-    <Text>
-      App
-    </Text>
+    <Routes />
   )
 }
-
-const Text = styled.div`
-  text-align: center;
-`
 
 export default App
