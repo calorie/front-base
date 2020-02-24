@@ -8,8 +8,13 @@
     "build": "webpack --mode production"
   },
   "devDependencies": {
+    "@types/react": "^16.9.22",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-redux": "^7.1.7",
+    "@types/redux-logger": "^3.0.7",
     "clean-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "redux-logger": "^3.0.6",
     "ts-loader": "^6.2.1",
     "typescript": "^3.8.2",
     "typescript-language-server": "^0.4.0",
@@ -17,5 +22,10 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5"
+  }
 }
