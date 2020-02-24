@@ -37,6 +37,7 @@ module.exports = {
     compress: true,
     inline: true,
     hot: true,
+    open: true,
     port: 3000,
     publicPath: 'http://localhost:3000/',
     historyApiFallback: true,
