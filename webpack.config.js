@@ -1,6 +1,7 @@
 const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HTMLPlugin = require('html-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -42,6 +43,9 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HTMLPlugin({
       template: path.join(__dirname, 'src/index.html'),
+    }),
+    new StylelintPlugin({
+      files: ['src/**/*.{ts,tsx}'],
     }),
   ]
 }
