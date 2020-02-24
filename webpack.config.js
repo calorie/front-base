@@ -21,7 +21,13 @@ module.exports = {
             loader: 'ts-loader',
           }
         ],
-      }
+      },
+      {
+        test: /\.(js|jsx|ts|tsx)$/,
+        enforce: 'pre',
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+      },
     ]
   },
   devServer: {
